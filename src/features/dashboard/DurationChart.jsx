@@ -145,7 +145,6 @@ function prepareData(startData, stays) {
 function DurationChart({ confirmedStays }) {
   const { isDarkMode } = useDartMode();
   const startData = isDarkMode ? startDataDark : startDataLight;
-  console.log(confirmedStays);
   const data = prepareData(startData, confirmedStays);
   return (
     <ChartBox>
